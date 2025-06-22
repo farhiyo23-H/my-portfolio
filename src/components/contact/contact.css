@@ -1,0 +1,110 @@
+#contactPage{
+   min-height: calc(100vh - 4rem); 
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 1rem;
+    padding: 4rem 1rem;
+    position: relative;
+    z-index: 1;
+}
+#contactPage::before {
+    content: "";
+    display: block;
+    height: 70px; /* same height as your navbar */
+    margin-top: -70px; /* negative margin of navbar height */
+    visibility: hidden;
+  }
+  
+#client {
+    background-color: rgb(30, 30, 30); /* Match dark theme */
+    color: white;
+    padding: 2rem;
+    width: 100%;
+    z-index: 2;
+  }
+.contactPageTitle {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding: 3rem 0;
+}
+
+.clientDesc{
+    font-size: 1rem;
+    max-width: 50rem;
+    font-weight: 400;
+    padding: 0.5rem 0 2rem;
+}
+.clientImg{
+    margin : 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.clientLogo{
+    object-fit: cover;
+    min-width: 9rem;
+    width: 23%;
+    padding: 0.25rem; 
+    margin: auto;
+
+
+    
+}
+.contactDesc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+    text-align: center;
+}
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 60rem;
+    
+}
+.name,.email,.msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background-color:rgb(50, 50, 50);
+    outline: none;
+}
+.submitBtn{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: medium;
+    margin-top: 1rem;
+
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem 0.75rem;
+}
+ 
