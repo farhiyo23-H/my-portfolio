@@ -48,7 +48,7 @@ const Contact = () => {
             Send
           </button>
           <div className="links">
-            <img src={twitter} alt="twitter" className="link" />
+            <img src={twitter} alt="twitter" className="twitterLogo" />
             <img src={facebook} alt="facebook" className="link" />
             <img src={youtube} alt="youtube" className="link" />
             <img src={instgram} alt="instgram" className="link" />

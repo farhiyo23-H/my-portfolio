@@ -1,26 +1,51 @@
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing : border-box;
-    text-decoration : none;
-    /* background: transparent; */
-    font-family: "inter", sans-serif;
-    color: white;
-    
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
 
- }
- html, body, #root {
-   height: 100%;
-   width: 100%;
-   background-color: rgb(30, 30, 30);
-   overflow-x: hidden;
-   scroll-behavior: smooth;
+/* Root and layout setup */
+body,
+html,
+#root,
+.App {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
- }
- section {
-   min-height: 100vh;
-   scroll-margin-top: 70px; /* Adjust to your navbar height */
-   border: 2px dashed red;
-  padding-top: 100px;
- }
- 
+/* Smooth scrolling fix for sticky navbar */
+#intro,
+#about,
+#skills,
+#portfolio,
+#contactPage {
+  scroll-margin-top: 100px; /* Adjust to match your navbar height */
+}
+
+/* Optional: Add a default link style */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Optional: Headings and text defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}

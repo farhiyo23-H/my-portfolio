@@ -1,75 +1,92 @@
 #works {
   margin: 0 auto;
-  /* max-height: calc(100vh - 4rem); */
   width: 100vw;
-  max-width: 60rem;
+  max-width: 75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1.5rem;
   background-color: rgb(30, 30, 30);
   min-height: 100vh;
+  color: white;
   position: relative;
   z-index: 1;
 }
+
 .worksTitle {
-  margin: 1rem 0;
-  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
-.worksdesc {
-  font-size: 1rem;
+
+.worksDesc {
+  font-size: 1.1rem;
   font-weight: 300;
-  padding: 0.5rem 0 2rem;
+  padding: 0 0 2.5rem;
   color: #ccc;
-  max-width: 40rem;
+  max-width: 45rem;
+  line-height: 1.6;
 }
 
 .worksImgs {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
   width: 100%;
-  gap: 1rem;
-  /* max-width: 65rem; */
+  max-width: 70rem;
 }
+
 .workImg {
-  object-fit: cover;
   height: 250px;
   width: 250px;
+  object-fit: cover;
   border-radius: 12px;
-
   background-color: black;
-  width: 20rem;
-  margin: 1rem;
-}
-.workImg:hover {
-  transform: scale(1.05);
+  margin: 0;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
+
+.workImg:hover {
+  transform: scale(1.05);
+}
+
 .worksButton {
-  margin-top: 2rem;
-  padding: 0.8rem 2rem;
+  margin-top: 2.5rem;
+  padding: 0.9rem 2.5rem;
   border: none;
   border-radius: 2rem;
   background-color: #646cff;
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
+
 .worksButton:hover {
   background-color: #5050ff;
 }
-@media screen and (max-width: 585px) {
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
   .workImg {
-    width: 100%;
-    height: auto;
+    height: 200px;
+    width: 200px;
   }
+}
+
+@media screen and (max-width: 480px) {
   .worksImgs {
     flex-direction: column;
     align-items: center;
+  }
+
+  .workImg {
+    width: 90vw;
+    height: auto;
+    max-width: 350px;
   }
 }
